@@ -1,19 +1,57 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Untitled Document</title>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
+/*reset stuff to get rid of annoying extra padding and margins*/
+body, html, div, img {padding: 0px;margin: 0px;}
 
-<script type="text/javascript" src="js/simpleShow.js"></script>
-<link href="css/simpleShow.css" rel="stylesheet" type="text/css" media="all" />
-</head>
+/*quick style on the body, you don't need this stuff, its only for the test page*/
+body{text-align:center;background-color:#CCC;box-shadow:inset 0 0 50px #000;height:2000px;padding-top:100px;font-family:Arial, Helvetica, sans-serif}
+h1{color:#CCC;text-shadow:1px 1px 0 #FFF, -1px -1px 1px #666;font-size:3em}
+a{position:relative;font-size:2em;text-decoration:none;color:#000;background-color:#FFF;box-shadow:inset 0 -1px 15px #333, 0 2px 3px #000;border:1px inset #999;width:80%;display:block;border-radius:20px;margin:10px auto;padding:10px}
+a:hover{top:1px}
 
-<body>
-<h1>simpleShow Jquery Lightbox</h1>
-<a class="viewThumb" href="http://redgraffix.com/testsite/fullsizeimages/funcitylogo.jpg">Test 1</a>
-<a class="viewThumb" href="http://redgraffix.com/testsite/images/stirthumb.jpg">Test 2</a>
-<a class="viewThumb" href="#">Test 3</a>
-</body>
-</html>
+/*simpleShow Style*/
+#simpleShow {
+  display: none;
+	cursor: pointer;
+	background-color: rgba(255,255,255,.8);
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+}
+#sSCenter {
+	width: 100%;
+	height: 100%;
+	display: table-cell;
+	vertical-align: middle;
+}
+#simpleShow img {
+	margin-top:20px;
+	padding: 5px;
+	min-height: 50px;
+	min-width: 50px;
+	background-color: #FFF;
+	border-radius: 10px;
+	box-shadow: 0px 2px 4px #2B2520;
+	transition: all 1s;
+	-moz-transition: all 1s; /* Firefox 4 */
+	-webkit-transition: all 1s; /* Safari and Chrome */
+	-o-transition: all 1s; /* Opera */
+}
+#simpleInfo {
+	position: absolute;
+	Top:-45px;
+	left:0px;
+	width:100%;
+	background: #362524;
+	border-bottom: 1px solid #A58582;
+	border-top: 1px solid rgba(255,255,255,0.30);
+	text-shadow: -1px -1px 0px #000;
+	color: #FFF;
+	font-size: .8em;
+	padding:5px 0px;
+}
+#simpleClose {
+	float:right;
+	padding-right:20px;
+}
