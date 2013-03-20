@@ -6,6 +6,9 @@
  *
  */	
 function simpleShow(){	
+	//preload the loading animation
+			var loadingImg = new Image();
+			loadingImg.src= "images/loading.gif";
 	//set up the sizing on the img and container
 	function simpleShowbgCss(){
 		$("#simpleShow , #sSCenter").css({'height': + $(window).height() + 'px','width': + $(window).width() + 'px'});};
