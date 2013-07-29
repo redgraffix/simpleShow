@@ -27,7 +27,7 @@ function simpleShow(){
 		//hide the scrollbar
 			$("body").css({'overflow': 'hidden'});
 		//add the html to the doc
-			$("body").prepend("<div id='simpleShow'><div id='sSCenter'></div>");
+			$("body").prepend("<div id='simpleShow'><div id='sSCenter'><img src='#'></div></div>");
 		//style the outer container	
 			simpleShowbgCss();
 		//preload the iimage then show it once it's loaded
