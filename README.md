@@ -1,7 +1,8 @@
 simpleShow
 ==========
 
-Very simple light weight jquery light box for images only
+Very simple light weight jquery light box for images only.
+Demo at - http://redgraffix.com/projects/simpleshow/
 
 Usage
 =====
